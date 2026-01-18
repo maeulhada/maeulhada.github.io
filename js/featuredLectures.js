@@ -51,7 +51,7 @@ function generateClassCard(classData) {
   console.log(card)
   card.onclick = function() {
 
-   window.location= "./featured_pages/courseMath.html"; 
+   window.location= "./featured_pages/" + classData.id + ".html";; 
   /*window.location= ""'classData.title' + '.html'"";*/
   }
 
