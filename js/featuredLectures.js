@@ -18,22 +18,22 @@ var classArr = [
   },
   {
     "id": "3",
-    "title": "하이든&메르의 디지털음악",
+    "title": "하",
     "thumbnail": "./img/music.jpg"
   },
   {
     "id": "4",
-    "title": "아토샘과 함께하는 엔트리 수업",
+    "title": "아",
     "thumbnail": "./img/atto.jpg"
   },
   {
     "id": "5",
-    "title": "자이로의 과학 강의",
+    "title": "자",
     "thumbnail": "./img/zyro.jpg"
   },
   {
     "id": "6",
-    "title": "하이든&메르의 디지털음악",
+    "title": "하",
     "thumbnail": "./img/music.jpg"
   }
 ]
@@ -51,7 +51,7 @@ function generateClassCard(classData) {
   console.log(card)
   card.onclick = function() {
 
-   window.location= "./curriculum_pages/courseMath.html"; 
+   window.location= "./featured_pages/courseMath.html"; 
   /*window.location= ""'classData.title' + '.html'"";*/
   }
 
