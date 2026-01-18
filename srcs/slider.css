@@ -1,0 +1,77 @@
+/*
+*
+*/ 
+
+/*
+* 슬라이더 (js로 바꿔야 함)
+*/
+.container {height:0px;}
+
+.container .slider {
+    position: absolute;
+    overflow: clip; 
+    top: 0;left: 0; width: 500%; height: 50vh;
+    animation: animate 10s linear infinite;
+    z-index: 0;
+}
+
+.container .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left; 
+    z-index: 0;
+}
+
+.container .slider .slide.slide1 {
+    background: url("../img/bg0.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.container .slider .slide.slide2 {
+    background: url("../img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide3 {
+    background: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.container .slider .slide.slide4 {
+    background: url("../img/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+} 
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    } 
+}
