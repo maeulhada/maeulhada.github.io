@@ -249,7 +249,7 @@ li:hover {cursor:pointer;}
         height:96px;
 }
 #main-image{
-    width: 1000px; 
+    width: 100%; 
     margin-left:auto;
     margin-right:auto; 
     text-align:center;
