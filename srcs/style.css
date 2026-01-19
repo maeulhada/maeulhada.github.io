@@ -330,13 +330,13 @@ li:hover {cursor:pointer;}
 /* menu toggle content */
 #menu {
   position: absolute;
-  width: 300px;
+  width: 250px;
   padding-left:0px;
   padding-right:0px;
-  padding-bottom:32px;
+  /* padding-bottom:32px; */
   margin: -50px 0 0 -30px;
   /* padding: 50px; */
-  padding-top: 70px;
+  padding-top: 68px;
   color:rgb(106, 60, 0);
   background-color : #a3bce1;
   /* background: rgb(240, 240, 240); */
