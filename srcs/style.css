@@ -29,9 +29,13 @@ html,body {
     overflow-x:hidden;
     overflow-y:auto;
      -ms-overflow-style: none;
-
 }
-.container { width: 100%; left:0;top:0; }
+
+.container { 
+    text-align:center;
+     top:0;
+     width:100%;
+}
 header{
     position: fixed;
     padding-top: 32px;
@@ -241,12 +245,15 @@ li:hover {cursor:pointer;}
     background-color: gray;
 }
 
+#the-gap {
+        height:96px;
+}
 #main-image{
-    padding-top:96px;
-    padding-left:-5px;
-    margin:0px;
-    width:100%;
-    object-fit:cover;
+    width: 1000px; 
+    margin-left:auto;
+    margin-right:auto; 
+    text-align:center;
+    /* padding-top:96px; */
 }
 /*
 ** menutoggle
@@ -558,6 +565,16 @@ blockquote:before,blockquote:after {
 ** media query
 */ 
 
+@media screen and (min-width:1200px) 
+{
+    .container{
+        text-align:center;
+    }
+    #main-image {
+        width:1000px;
+
+    }
+}
 @media screen and (max-width: 1278px) {
     /* .right-nav, .page-right-nav { display:none;} */
     nav { 
