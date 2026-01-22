@@ -621,7 +621,7 @@ nav {
 
 @media screen and (max-width: 767px) {
     #main-image {
-        width:60%;
+        width:100%;
     }
     .logo, .page-logo, .hidden-logo {
         display:block;
