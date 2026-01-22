@@ -421,15 +421,15 @@ blockquote {
     margin-bottom:45px;
            font-family: 'Noto Sans KR', 'Special Elite';
 
-    font-size: 1.2rem;
-    line-height: 1.5em;
+    font-size: 1.1rem;
+    line-height: 1.4em;
     color: rgb(106, 60, 0);
     /* text-decoration:underline; */
 }
 blockquote:before,blockquote:after {
     z-index:0;
     position: relative;
-    line-height:0.5em; 
+    line-height:0.7em; 
     color: rgb(106, 60, 0);
        font-family: 'Noto Sans KR', 'Special Elite';
    position:absolute;
@@ -438,13 +438,13 @@ blockquote:before,blockquote:after {
 
  blockquote:before {
     content: '“';
-    top:48%;
+    top:30%;
     left:-20%;
  }
  blockquote:after {
     content: '”';
-	top: 72%;
-    right: -20%;
+	top: 110%;
+    right: 0%;
 }
 
 /* middle */
