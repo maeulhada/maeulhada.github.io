@@ -19,11 +19,12 @@
  */
 
 h1{font-size: 20px;}
-h2, h3, h4{color:rgb(25,25,25);}
+h2, h3, h4{color:rgb(106,60,0);}
 
 html,body { 
     margin: 0px;
     padding: 0px;
+    color: rgb(106, 60, 0);
     background-color: #a3bce1;
     width:100%;
     overflow-x:hidden;
@@ -63,7 +64,7 @@ header{
 
 }
 main {
-    font-size:15px; color:rgb(25,25,25);
+    font-size:15px;  color: rgb(106, 60, 0);
     text-decoration-line: none;
     margin-top:70px;
     margin-left:0px;
