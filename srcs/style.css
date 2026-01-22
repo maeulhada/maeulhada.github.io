@@ -573,7 +573,7 @@ blockquote:before,blockquote:after {
         text-align:center;
     }
     #main-image {
-        width:1000px;
+        width:100%;
 
     }
 }
