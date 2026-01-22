@@ -421,8 +421,8 @@ blockquote {
     margin-bottom:45px;
            font-family: 'Noto Sans KR', 'Special Elite';
 
-    font-size: 16px;
-    line-height: 1.6em;
+    font-size: 1.2rem;
+    line-height: 1.5em;
     color: rgb(106, 60, 0);
     /* text-decoration:underline; */
 }
