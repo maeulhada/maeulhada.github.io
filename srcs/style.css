@@ -416,12 +416,12 @@ li:hover {cursor:pointer;}
 blockquote {
     position:relative;
     float:center;
-    margin-top:70px;
+    margin-top:40px;
     margin-bottom:45px;
            font-family: 'Noto Sans KR', 'Special Elite';
 
-    font-size: 18px;
-    line-height: 1.8em;
+    font-size: 16px;
+    line-height: 1.6em;
     color: rgb(106, 60, 0);
     /* text-decoration:underline; */
 }
@@ -573,13 +573,13 @@ blockquote:before,blockquote:after {
         text-align:center;
     }
     #main-image {
-        width:1000px;
+        width:800px;
 
     }
 }
 @media screen and (max-width: 1278px) {
     #main-image {
-        width:100%;
+        width:800px;
     }
     /* .right-nav, .page-right-nav { display:none;} */
     nav { 
