@@ -573,11 +573,14 @@ blockquote:before,blockquote:after {
         text-align:center;
     }
     #main-image {
-        width:100%;
+        width:1000px;
 
     }
 }
 @media screen and (max-width: 1278px) {
+    #main-image {
+        width:100%;
+    }
     /* .right-nav, .page-right-nav { display:none;} */
     nav { 
         text-decoration:none;
@@ -617,6 +620,9 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
+    #main-image {
+        width:100%;
+    }
     .logo, .page-logo, .hidden-logo {
         display:block;
         text-align:center;
