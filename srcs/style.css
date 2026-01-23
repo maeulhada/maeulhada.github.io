@@ -429,7 +429,7 @@ blockquote {
 blockquote:before,blockquote:after {
     z-index:0;
     position: relative;
-    line-height:0.7em; 
+    line-height:0.5em; 
     color: rgb(106, 60, 0);
        font-family: 'Noto Sans KR', 'Special Elite';
    position:absolute;
@@ -438,13 +438,13 @@ blockquote:before,blockquote:after {
 
  blockquote:before {
     content: '“';
-    top:30%;
+    top:48%;
     left:-20%;
  }
  blockquote:after {
     content: '”';
-	top: 110%;
-    right: 0%;
+	top: 72%;
+    right: -20%;
 }
 
 /* middle */
@@ -580,7 +580,7 @@ blockquote:before,blockquote:after {
 }
 @media screen and (max-width: 1278px) {
     #main-image {
-        width:800px;
+        width:auto;
     }
     /* .right-nav, .page-right-nav { display:none;} */
     nav { 
