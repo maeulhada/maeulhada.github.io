@@ -19,13 +19,13 @@
  */
 
 h1{font-size: 20px;}
-h2, h3, h4{color:rgb(106,60,0);}
+h2, h3, h4{color:rgb(81, 81, 81);}
 
 html,body { 
     margin: 0px;
     padding: 0px;
-    color: rgb(106, 60, 0);
-    background-color: #a3bce1;
+    color: rgb(81, 81, 81);
+    background-color: #ffffff;
     width:100%;
     overflow-x:hidden;
     overflow-y:auto;
@@ -39,16 +39,16 @@ html,body {
 }
 header{
     position: fixed;
-    padding-top: 32px;
-    top: -32px;
+    padding-top: 0px;
+    top: 0px;
     width:100%; 
     text-align:center; 
     justify-content: space-between;
-    background-color: rgb(106, 60, 0);
+    background-color: rgb(81, 81, 81);
     z-index:3;
     display: flex;
     align-items: center;
-    height:100px;
+    height:50px;
 }
 
 .main-logo {
@@ -59,12 +59,12 @@ header{
     right: 15px;
     /* text-align:right; */
      width:100%;    
-     top:42px;
+     top:10px;
     /* transform: translate(-50%, -50%); */
 
 }
 main {
-    font-size:15px;  color: rgb(106, 60, 0);
+    font-size:15px;  color: rgb(81, 81, 81);
     text-decoration-line: none;
     margin-top:70px;
     margin-left:0px;
@@ -266,7 +266,7 @@ li:hover {cursor:pointer;}
 #menuToggle {
   /* display: none; */
   position: relative;
-  top:20px;
+  top:0px;
   left:15px;
   z-index: 1;
   -webkit-user-select: none;
@@ -276,11 +276,11 @@ li:hover {cursor:pointer;}
 
 #menuToggle a {
   text-decoration: none;
-  color: #a3bce1;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover { color: #a3bce1; }
+#menuToggle a:hover { color: #ffffff; }
  
 #menuToggle input {
   display: block;
@@ -302,7 +302,7 @@ li:hover {cursor:pointer;}
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background:  #a3bce1;
+  background:  #ffffff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -318,7 +318,7 @@ li:hover {cursor:pointer;}
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background:rgb(106, 60, 0);
+  background:rgb(81, 81, 81);
 }
 #menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
@@ -338,8 +338,8 @@ li:hover {cursor:pointer;}
   margin: -50px 0 0 -30px;
   /* padding: 50px; */
   padding-top: 68px;
-  color:rgb(106, 60, 0);
-  background-color : #a3bce1;
+  color:rgb(81, 81, 81);
+  background-color : #ffffff;
   /* background: rgb(240, 240, 240); */
   list-style-type: none;
   -webkit-font-smoothing: antialiased; /*사파리*/
@@ -358,8 +358,8 @@ li:hover {cursor:pointer;}
 .go-to-main a {color:#b9d7ff;}
 #menu li {
     font-family:"Nanum Gothic";
-    background-color:rgb(106, 60, 0);
-    color: #a3bce1;
+    background-color:rgb(81, 81, 81);
+    color: #ffffff;
     padding: 0px 0;
     padding-left:0px;
     line-height: 2.5em;
@@ -368,7 +368,7 @@ li:hover {cursor:pointer;}
 }
 #menu ul.click li{
     /* border-top:1px solid rgba(199, 199, 199, 0.7); */
-    border-bottom:1px solid  #a3bce1;
+    border-bottom:1px solid  #ffffff;
     border-collapse:collapse;
 }
 #menu ul.sub {
@@ -377,10 +377,10 @@ li:hover {cursor:pointer;}
     padding-left:0px;
 }
 #menu ul.sub li { 
-    border-bottom:1px solid rgb(106, 60, 0);;
-    background-color: #a3bce1;
+    border-bottom:1px solid rgb(81, 81, 81);;
+    background-color: #ffffff;
 }
-#menu ul.sub li a {color: #a3bce1;}
+#menu ul.sub li a {color: #ffffff;}
 #menu .ham-a {
     font-size: 15px;
     color: #232323;
@@ -399,10 +399,10 @@ li:hover {cursor:pointer;}
 
 .intro-banner{
     padding: 0 0 px; margin:0 0px;
-    margin-top:-5px;
+    margin-top:-10px;
   font-family: 'Gowun Batang', 'Special Elite';
-  background-color:  #a3bce1;
-  height:200px;
+  background-color:  #ffffff;
+  height:210px; 
 }
 
 .quote-space {
@@ -410,27 +410,24 @@ li:hover {cursor:pointer;}
     justify-content: center;
     display: flex;
            font-family: 'Noto Sans KR', 'Special Elite';
-
     text-align :center;
 } 
 
 blockquote {
     position:relative;
     float:center;
-    margin-top:40px;
-    margin-bottom:45px;
-           font-family: 'Noto Sans KR', 'Special Elite';
-
-    font-size: 1.1rem;
-    line-height: 1.4em;
-    color: rgb(106, 60, 0);
+    /* margin-top:30px; */
+   margin-bottom:55px;
+    /* font-size: 1.1rem; */
+    /* line-height: 1.4em; */
+    color: rgb(81, 81, 81);
     /* text-decoration:underline; */
 }
 blockquote:before,blockquote:after {
     z-index:0;
     position: relative;
     line-height:0.5em; 
-    color: rgb(106, 60, 0);
+    color: rgb(81, 81, 81);
        font-family: 'Noto Sans KR', 'Special Elite';
    position:absolute;
 	font-size: 8rem;
@@ -454,7 +451,7 @@ blockquote:before,blockquote:after {
     margin:0px 0px;
     padding-bottom: 270px;
     height: 40px;
-    background-color: #a3bce1;
+    background-color: #ffffff;
     /* padding: 2em 5em 3em 5em; */
 }
 
@@ -481,7 +478,7 @@ blockquote:before,blockquote:after {
     text-decoration-line: none;
 }
 .middle-banner .banner-space .direct-02 a {
-    background-color: #a3bce1;
+    background-color: #ffffff;
     color:rgb(100, 100, 100);
     font-size:17px;
     background-repeat:no-repeat;
@@ -524,7 +521,7 @@ blockquote:before,blockquote:after {
 /*calendar*/
 .first-row { background-color:#c4e9ff;}
 .monthly-table-shortcut {
-    background-color: #a3bce1;
+    background-color: #ffffff;
 
     margin: 0 auto;
     padding: 2em 5em 3em 5em;
@@ -615,7 +612,7 @@ nav {
     width:100%;
     margin-left:0;
     left:0;
-    background-color :#a3bce1;;
+    background-color :#ffffff;;
     /* box-shadow:0px 0px 6px gray; */
     opacity:.8;
 }
@@ -637,7 +634,7 @@ nav {
     text-align:right;
     right: 15px;
     width:100%;    
-     top:42px;
+     top:10px;
     /* transform: translate(-50%, -50%); */
     }
     .logo img, .page-logo img { width:80px; height: auto;}
