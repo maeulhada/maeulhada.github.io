@@ -27,7 +27,7 @@ footer a:visited, footer a:link { color:white; text-decoration:none;}
     text-align: center;
     font-size:11px;
 }
-.copyrights h3 {color: rgb(81,81,81);}
+.copyrights h3 {color: rgb(0,0,0);}
 footer ul { float: left; margin: 0px 0px 0px 0px; padding-left:0px;
 margin-bottom:20px;}
 footer li { position:relative; display: inline-block; margin-top:0px;padding:0px 10px 0 10px;}

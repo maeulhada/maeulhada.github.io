@@ -3,13 +3,13 @@ var cardGrid = document.getElementById('class-grid');
 var classArr = [
   {
     "id": "0",
-    "title": "눈 오는 소리",
-    "thumbnail": "./img/winter.png"
+    "title": "전시 - 바다를 생각해",
+    "thumbnail": "./img/exhibition3.png"
   },
   {
     "id": "1",
-    "title": "입춘첩 리소그래피",
-    "thumbnail": "./img/ipchun.png"
+    "title": "디딤돌 문화예술학교",
+    "thumbnail": "./img/originOfArt.png"
   },
   {
     "id": "2",
