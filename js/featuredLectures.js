@@ -3,13 +3,13 @@ var cardGrid = document.getElementById('class-grid');
 var classArr = [
   {
     "id": "0",
-    "title": "전시 - 바다를 생각해",
-    "thumbnail": "./img/exhibition3.png"
+    "title": "문화예술학교 참여자 모집",
+    "thumbnail": "./img/originOfArt.png"
   },
   {
     "id": "1",
-    "title": "디딤돌 문화예술학교",
-    "thumbnail": "./img/originOfArt.png"
+    "title": "전시 - 바다를 생각해",
+    "thumbnail": "./img/exhibition3.png"
   },
   {
     "id": "2",
