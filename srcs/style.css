@@ -285,13 +285,23 @@ li:hover {cursor:pointer;}
 
     /* padding-top:96px; */
 }
+
 #text-box{
     margin-left:auto;
     margin-right:auto; 
     width: 70%;
-    line-height: 30px;
+    line-height: 30px;    
+}
 
-    
+#memberbox{
+    display:block;
+    text-align:left;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #ccc;
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%
 }
 /*
 ** menutoggle
