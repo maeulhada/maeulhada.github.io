@@ -48,7 +48,7 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
+	img.attr('src', 'childrens_pages/' +  page + '.jpg');
 
 	loadRegions(page, pageElement);
 

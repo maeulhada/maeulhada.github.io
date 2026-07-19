@@ -62,15 +62,26 @@
 	<div id="the-gap">
 	</div>
     <p>
-    <p> 준비중  
-    <p>     
+	<div id="">
+
+	
+    <h1>예술의 기원</h1>  
+	<h4>종이 만들기 Papermaking</h4>   
     <p>
-
-
-
-
-
-
+	<!-- 썸네일 이미지 -->
+	<div class="gallery">
+    <img class="thumbnail" src="../img/cours_img/cours01_0.jpg" onclick="openModal(this.src)" alt="작은 이미지">
+	<img class="thumbnail" src="../img/cours_img/cours01_1.jpg" onclick="openModal(this.src)" alt="작은 이미지">
+	<img class="thumbnail" src="../img/cours_img/cours01_2.jpg" onclick="openModal(this.src)" alt="작은 이미지">
+	<img class="thumbnail" src="../img/cours_img/cours01_3.jpg" onclick="openModal(this.src)" alt="작은 이미지">
+	<img class="thumbnail" src="../img/cours_img/cours01_4.jpg" onclick="openModal(this.src)" alt="작은 이미지">
+    </div>
+    <!-- 2. 모달(팝업) 레이아웃 -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+		<img class="modal-content" id="img01" onclick="closeModal()" style="cursor: pointer;">
+    </div>
+</div>
         
     </p>
     </div>
@@ -82,8 +93,23 @@
 		</div>
 	</footer>
 </body>
-<script src="../js/featuredLectures.js"></script>
-<script src="../slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script>
+        // 모달 열기: 클릭한 썸네일의 src 주소를 매개변수(imageSrc)로 받습니다.
+        function openModal(imageSrc) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            
+
+			modal.style.display = "block";
+            modalImg.src = imageSrc; // 모달창 이미지 주소를 원본 파일 경로로 교체
+         
+        }
+
+        // 모달 닫기
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 <!-- <script src="../js/pageMenu.js" type="text/javascript" charset="utf-8"></script> -->
 
 </html>
