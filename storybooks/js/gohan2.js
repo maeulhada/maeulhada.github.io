@@ -1,7 +1,3 @@
-/*
- * Magazine sample
-*/
-
 function addPage(page, book) {
 
 	var id, pages = book.turn('pages');
@@ -48,7 +44,7 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'storybooks/gohan1/' +  page + '.jpg');
+	img.attr('src', 'storybooks/gohan2/' +  page + '.jpg');
 
 	loadRegions(page, pageElement);
 
@@ -78,7 +74,7 @@ function zoomTo(event) {
 
 function loadRegions(page, element) {
 
-	$.getJSON('pages/'+page+'-regions.json').
+	$.getJSON('storybooks/gohan2/'+page+'-regions.json').
 		done(function(data) {
 
 			$.each(data, function(key, region) {
@@ -179,7 +175,7 @@ function loadLargePage(page, pageElement) {
 
 	// Loadnew page
 	
-	img.attr('src', 'pages/' +  page + '-large.jpg');
+	img.attr('src', 'storybooks/gohan2/' +  page + '-large.jpg');
 }
 
 // Load small page
@@ -193,7 +189,7 @@ function loadSmallPage(page, pageElement) {
 	img.unbind('load');
 	// Loadnew page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
+	img.attr('src', 'storybooks/gohan2/' +  page + '.jpg');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488
@@ -302,7 +298,7 @@ function setPreview(view) {
 
 	var previewWidth = 112,
 		previewHeight = 73,
-		previewSrc = 'pages/preview.jpg',
+		previewSrc = 'storybooks/gohan2/preview.jpg',
 		preview = $(_thumbPreview.children(':first')),
 		numPages = (view==1 || view==$('#slider').slider('option', 'max')) ? 1 : 2,
 		width = (numPages==1) ? previewWidth/2 : previewWidth;
