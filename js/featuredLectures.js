@@ -3,7 +3,7 @@ var cardGrid = document.getElementById('class-grid');
 var classArr = [
   {
     "id": "0",
-    "title": "문화예술학교 참여자 모집",
+    "title": "문화예술학교 결과전시회",
     "thumbnail": "./img/originOfArt.png"
   },
   {
