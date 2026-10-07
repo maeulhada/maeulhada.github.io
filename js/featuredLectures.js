@@ -8,7 +8,7 @@ var classArr = [
   },
   {
     "id": "1",
-    "title": "전시 - 바다를 생각해",
+    "title": "전시 - 마치 달처럼",
     "thumbnail": "./img/exhibition3.png"
   },
   {
