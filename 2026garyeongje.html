@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>제9회  홍천 가령폭포  가령제</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: 고운바탕, Noto Serif KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Serif+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Gowun Batang"', '"Noto Serif KR"', 'serif'],
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            nightBlue: '#0c2340',
+            deepOcean: '#1a4b77',
+            hanji: '#faf8f5',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 은은한 배경 블러 및 한지 질감 효과 */
+    body {
+      font-family: 'Gowun Batang', 'Noto Serif KR', serif;
+      background-color: #0b1a2d;
+      color: #2c2825;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* 배경 이미지 레이어: 같은 폴더에 이미지 파일(예: bg.jpg)을 두시거나 필요 시 경로를 수정하세요 */
+    .bg-canvas {
+      background-image: linear-gradient(rgba(10, 25, 47, 0.45), rgba(10, 25, 47, 0.65)), url('bg.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+
+    /* 부드러운 카드 그림자 */
+    .hanji-card {
+      background: rgba(254, 253, 250, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35), 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    }
+
+    /* 토스트 알림 애니메이션 */
+    #toast {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-canvas min-h-screen flex justify-center items-start sm:py-8">
+<body style="background: url('./img/bg.jpg') no-repeat center center / cover fixed;"></body>
+  <!-- 메인 모바일 규격 컨테이너 (최대 480px) -->
+  <main class="w-full max-w-[460px] min-h-screen sm:min-h-0 sm:rounded-3xl hanji-card overflow-hidden relative flex flex-col justify-between my-auto">
+    
+    <!-- 상단 장식 및 초대 타이틀 영역 -->
+    <header class="pt-16 pb-10 px-8 text-center relative">
+      <!-- 은은한 원형 상징 문양 -->
+      <div class="mx-auto w-12 h-12 rounded-full border border-stone-400/50 flex items-center justify-center mb-6 text-stone-500 text-xs tracking-widest">
+        誠心
+      </div>
+
+      <p class="text-xs tracking-[0.3em] uppercase text-stone-600 mb-3 font-sans font-light">INVITATION</p>
+      
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 leading-relaxed mb-3">
+        제9회  홍천 가령폭포  가령제
+      </h1>
+      
+      <p class="text-sm text-stone-600 tracking-wider font-light">
+        정성을 모아 하늘과 땅, 사람을 잇는 자리에 초대합니다
+      </p>
+
+      <div class="w-8 h-[1px] bg-stone-300 mx-auto mt-7"></div>
+    </header>
+
+    <!-- 초대 본문 글 -->
+    <section class="px-8 py-6 text-center leading-loose text-stone-800 text-[15px] font-normal space-y-4">
+      <p>
+      하늘에 새로운 시작을 알리고, 잘못된 과거를 뒤에 두고...<br>
+      새로운 시간으로의 길을 나아가고저<br>
+      희망을 가진 사람들이 소망을 담아<br>
+      하늘에 천제를 올리려 합니다.<br>
+      </p>
+      <p>
+      지친 마음을 뉘이고<br>
+      상처 입은 마음을 어루만지며<br>
+      삶을 살고저,<br>
+      </p>
+      <p>
+      한 사람이 둘이 되어 소박한 정성을 한마음 한뜻으로 모아 올리는<br> 
+      홍천가령폭포 가령 천제에 여러분을 초대합니다.<br>
+      </p>
+      <p class="text-stone-600 text-sm font-light pt-2">
+        귀한 발걸음으로 함께해 주시어<br>
+        맑은 기운과 따스한 정을 나누어 주시기 바랍니다.
+      </p>
+    </section>
+
+    <!-- 일시 및 장소 안내 박스 -->
+    <section class="px-6 py-6">
+      <div class="bg-white/80 rounded-2xl p-6 border border-stone-200/80 shadow-sm space-y-6">
+        
+        <!-- 날짜 및 시간 -->
+        <div class="flex items-start space-x-4">
+          <div class="w-9 h-9 rounded-xl bg-stone-100 flex items-center justify-center text-stone-700 flex-shrink-0 mt-0.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="block text-xs text-stone-600 font-sans tracking-wide">일시</span>
+            <p class="text-stone-900 font-semibold text-base mt-0.5">2026년 11월 14일(토)</p>
+            <p class="text-stone-700 text-sm mt-0.5">오후 2시 ~ 6시</p>
+          </div>
+        </div>
+
+        <div class="h-[1px] bg-stone-100"></div>
+
+        <!-- 장소 안내 -->
+        <div class="flex items-start space-x-4">
+          <div class="w-9 h-9 rounded-xl bg-stone-100 flex items-center justify-center text-stone-700 flex-shrink-0 mt-0.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <span class="block text-xs text-stone-600 font-sans tracking-wide">장소</span>
+            <p class="text-stone-900 font-semibold text-base mt-0.5">강원도 홍천군 내촌면 아홉사리로 1758(하백의 정원)</p>
+            <p class="text-stone-700 text-xs mt-1 font-light" id="addressText">강원도 홍천군 내촌면 아홉사리로 1758(하백의 정원)</p>
+            
+            <!-- 주소 복사 버튼 -->
+            <button onclick="copyAddress()" class="mt-3 inline-flex items-center space-x-1.5 px-3 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-lg text-xs font-sans transition-colors active:scale-95">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+              <span>주소 복사</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 지도 바로가기 버튼 링크 -->
+      <div class="grid grid-cols-2 gap-2.5 mt-3">
+        <a href="https://map.naver.com/v5/search/%EA%B0%95%EC%9B%90%EB%8F%84%20%ED%99%8D%EC%B2%9C%EA%B5%B0%20%EB%82%B4%EC%B4%8C%EB% human5%20%EC%95%84%ED%99%89%EC%82%AC%EB%A6%AC%EB%A1%9C%201758" target="_blank" rel="noopener noreferrer">
+          <span>네이버 지도 보기</span>
+        </a>
+        <a href="https://map.kakao.com/link/search/%EA%B0%95%EC%9B%90%EB%8F%84%20%ED%99%8D%EC%B2%9C%EA%B5%B0%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%95%84%ED%99%89%EC%82%AC%EB%A6%AC%EB%A1%9C%201758" target="_blank" rel="noopener noreferrer">
+          <span>카카오 맵 보기</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 안내 사항 및 문의처 (직접 수정하실 수 있는 영역) -->
+    <section class="px-8 py-5 text-center text-xs text-stone-500 leading-relaxed space-y-1">
+      <p>문의사항 : 010-3357-4984</p>
+    </section>
+
+    <!-- 하단 여백 및 크레딧 -->
+    <footer class="pb-10 pt-4 text-center">
+      <p class="text-[11px] text-stone-400 font-sans tracking-widest uppercase">Hongcheon Naechon Gut 2026</p>
+    </footer>
+
+    <!-- 복사 완료 토스트 알림창 -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-stone-900/90 text-white text-xs px-4 py-2.5 rounded-full shadow-lg opacity-0 pointer-events-none transform translate-y-3 z-50 transition-all font-sans">
+      주소가 클립보드에 복사되었습니다
+    </div>
+
+  </main>
+
+  <script>
+    // 주소 복사 스크립트 (모바일 웹 뷰 호환)
+    function copyAddress() {
+      const address = "강원도 홍천군 내촌면 아홉사리로 1758(하백의 정원)";
+      
+      const tempInput = document.createElement("textarea");
+      tempInput.value = address;
+      tempInput.style.position = "fixed";
+      tempInput.style.opacity = "0";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      
+      try {
+        document.execCommand('copy');
+        showToast("주소가 복사되었습니다.");
+      } catch (err) {
+        showToast("주소 복사에 실패했습니다. 직접 복사해주세요.");
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // 토스트 알림 띄우기 함수
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.innerText = message;
+      toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+      }, 2200);
+    }
+  </script>
+</body>
+</html>
