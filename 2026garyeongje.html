@@ -51,8 +51,8 @@
     /* 부드러운 카드 그림자 */
     .hanji-card {
       background: rgba(254, 253, 250, 0.42);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(9px);
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
       box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35), 0 0 1px rgba(255, 255, 255, 0.5) inset;
     }
 
@@ -158,19 +158,19 @@
 
       <!-- 지도 바로가기 버튼 링크 -->
       <div class="grid grid-cols-2 gap-2.5 mt-3">
-        <a href="https://map.naver.com/v5/search/%EA%B0%95%EC%9B%90%EB%8F%84%20%ED%99%8D%EC%B2%9C%EA%B5%B0%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%95%84%ED%99%89%EC%82%AC%EB%A6%AC%EB%A1%9C%201758" target="_blank" rel="noopener noreferrer">
-          <span>네이버 지도 보기</span>
-        </a>
-        <a href="https://map.kakao.com/link/search/%EA%B0%95%EC%9B%90%EB%8F%84%20%ED%99%8D%EC%B2%9C%EA%B5%B0%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%95%84%ED%99%89%EC%82%AC%EB%A6%AC%EB%A1%9C%201758" target="_blank" rel="noopener noreferrer">
-          <span>카카오 맵 보기</span>
-        </a>
-      </div>
+  <a href="https://map.naver.com/v5/search/%EA%B0%95%EC%9B%90%EB%8F%84%20%ED%99%8D%EC%B2%9C%EA%B5%B0%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%95%84%ED%99%89%EC%82%AC%EB%A6%AC%EB%A1%9C%201758" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-center">
+    <span>네이버 지도 보기</span>
+  </a>
+  <a href="https://map.kakao.com/link/search/%EA%B0%95%EC%9B%90%EB%8F%84%20%ED%99%8D%EC%B2%9C%EA%B5%B0%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%95%84%ED%99%89%EC%82%AC%EB%A6%AC%EB%A1%9C%201758" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-center">
+    <span>카카오 맵 보기</span>
+  </a>
+</div>
     </section>
 
     <!-- 안내 사항 및 문의처 (직접 수정하실 수 있는 영역) -->
-    <section class="px-9 py-6 text-center text-xs text-stone-600 leading-relaxed space-y-1">
-      <p>문의사항 : 010-3357-4984</p>
-    </section>
+    <section class="px-9 py-6 text-center text-sm font-semibold text-stone-900 leading-relaxed space-y-1">
+  <p>문의사항 : <a href="tel:010-3357-4984" class="underline underline-offset-4">010-3357-4984</a></p>
+</section>
 
     <!-- 하단 여백 및 크레딧 -->
     <footer class="pb-10 pt-4 text-center">
