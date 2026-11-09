@@ -21,11 +21,12 @@
             serif: ['"Gowun Batang"', '"Noto Serif KR"', 'serif'],
             sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
           },
-          colors: {
-            nightBlue: '#0c2340',
-            deepOcean: '#1a4b77',
-            hanji: '#faf8f5',
-          }
+          // colors: {
+          //   // nightBlue: '#0c2340',
+          //   black: '#000000',
+          //   black: '#000000',
+          //   black: '#000000',
+          // }
         }
       }
     }
@@ -42,7 +43,7 @@
 
     /* 배경 이미지 레이어: 같은 폴더에 이미지 파일(예: bg.jpg)을 두시거나 필요 시 경로를 수정하세요 */
     .bg-canvas {
-      background-image: linear-gradient(rgba(10, 25, 47, 0.20), rgba(10, 25, 47, 0.30)), url('bg.jpg');
+      background-image: linear-gradient(rgba(10, 25, 47, 0.40), rgba(10, 25, 47, 0.60)), url('bg.jpg');
       background-size: cover;
       background-position: center top;
       background-attachment: fixed;
@@ -53,7 +54,7 @@
       background: rgba(254, 253, 250, 0.42);
       backdrop-filter: blur(0px);
       -webkit-backdrop-filter: blur(0px);
-      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35), 0 0 1px rgba(255, 255, 255, 0.5) inset;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.30), 0 0 1px rgba(255, 255, 255, 0.4) inset;
     }
 
     /* 토스트 알림 애니메이션 */
@@ -80,17 +81,11 @@
       <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 leading-relaxed mb-3">
         제9회  홍천 가령폭포  가령제
       </h1>
-      
-      <!-- <p class="text-sm text-stone-600 tracking-wider font-light">
-        정성을 모아 하늘과 땅, 사람을 잇는 자리에 초대합니다
-      </p> -->
-
-      <div class="w-8 h-[1px] bg-stone-300 mx-auto mt-7"></div>
+      <!-- <div class="w-8 h-[1px] bg-stone-300 mx-auto mt-7"></div> -->
     </header>
 
     <!-- 초대 본문 글 -->
-    <section class="px-8 py-6 text-center leading-loose text-stone-800 text-[15px] font-normal space-y-4">
-      <p>
+    <section class="px-8 py-6 text-center leading-loose text-stone-800 text-[15px] font-semibold space-y-4">
       하늘에 새로운 시작을 알리고, <br>잘못된 과거를 뒤에 두고...<br>
       새로운 시간으로의 길을 나아가고저<br>
       희망을 가진 사람들이 소망을 담아<br>
